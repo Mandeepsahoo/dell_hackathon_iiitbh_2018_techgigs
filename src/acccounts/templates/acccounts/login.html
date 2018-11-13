@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1 style="text-align: center ;"><strong>Login</strong></h1>
+<div class="row">
+	<img class ="center" src= "http://www.upl.co/uploads/login1542022823.png" height="500" width="100%" style="opacity: 0.9">
+   <div style="position: absolute;left: 85%">
+    <form method='POST' style="position: relative;right: 800px; top: 200px; font: white;"> {% csrf_token %}
+      {{ form }}
+      <button type='submit' class='btn btn-primary'>Submit</button>
+    </form>
+</div>
+</div>
+{% endblock %}
